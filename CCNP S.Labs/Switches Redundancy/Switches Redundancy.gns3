@@ -1,0 +1,288 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "name": "Switches Redundancy",
+    "project_id": "734286a9-316d-41d1-9201-50f98077db91",
+    "revision": 7,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "topology": {
+        "computes": [],
+        "drawings": [],
+        "links": [
+            {
+                "link_id": "2a05836a-fec1-46af-bc8a-c9120db63939",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/0",
+                            "x": -18,
+                            "y": 52
+                        },
+                        "node_id": "7dc8eb13-6750-486b-b89f-b1f273b443c0",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": -8,
+                            "y": -42
+                        },
+                        "node_id": "a2b4ed48-dbcb-4d6a-aeb5-4523c9b74f5e",
+                        "port_number": 1
+                    }
+                ]
+            },
+            {
+                "link_id": "090937ea-3797-4e20-8910-e5d3709759d2",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 64,
+                            "y": 31
+                        },
+                        "node_id": "7dc8eb13-6750-486b-b89f-b1f273b443c0",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/2",
+                            "x": -31,
+                            "y": -12
+                        },
+                        "node_id": "e8790c1d-b735-468d-9108-f55207e3432a",
+                        "port_number": 2
+                    }
+                ]
+            },
+            {
+                "link_id": "7b63916a-f527-4f5d-b512-d1cd98c7b2bf",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 45,
+                            "y": -40
+                        },
+                        "node_id": "e8790c1d-b735-468d-9108-f55207e3432a",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/2",
+                            "x": 24,
+                            "y": 52
+                        },
+                        "node_id": "47bcfb38-a04e-4336-a730-e251fda34764",
+                        "port_number": 2
+                    }
+                ]
+            },
+            {
+                "link_id": "952757b5-4233-4d1a-b0f7-0821a9d6f7d4",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": -34,
+                            "y": 29
+                        },
+                        "node_id": "47bcfb38-a04e-4336-a730-e251fda34764",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/0",
+                            "x": 73,
+                            "y": -18
+                        },
+                        "node_id": "a2b4ed48-dbcb-4d6a-aeb5-4523c9b74f5e",
+                        "port_number": 0
+                    }
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "vm",
+                "console": 5000,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 48,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "SW2",
+                    "x": 18,
+                    "y": -25
+                },
+                "name": "SW2",
+                "node_id": "47bcfb38-a04e-4336-a730-e251fda34764",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "ethernet_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "f16db44433beb3e8c828db5ddad1de8a",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l2-adventerprisek9-15.2d.bin",
+                    "private_config": null,
+                    "private_config_content": null,
+                    "ram": 256,
+                    "serial_adapters": 0,
+                    "startup_config": "startup-config.cfg",
+                    "startup_config_content": "\n!\n! Last configuration change at 18:01:19 UTC Mon Aug 21 2017\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\nservice compress-config\n!\nhostname SW2\n!\nboot-start-marker\nboot-end-marker\n!\n!\nlogging discriminator EXCESS severity drops 6 msg-body drops EXCESSCOLL \nlogging buffered 50000\nlogging console discriminator EXCESS\n!\nno aaa new-model\n!\n!\n!\n!\n!\nno ip icmp rate-limit unreachable\n!\n!\n!\nno ip domain-lookup\nip cef\nno ipv6 cef\n!\nkey chain cisco\n key 1\n  key-string cisco\n   cryptographic-algorithm hmac-sha-512\n!\n!\n!\nspanning-tree mode rapid-pvst\nspanning-tree extend system-id\n!\nvlan internal allocation policy ascending\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Ethernet0/0\n!\ninterface Ethernet0/1\n switchport trunk encapsulation dot1q\n switchport mode trunk\n!\ninterface Ethernet0/2\n switchport trunk encapsulation dot1q\n switchport mode trunk\n!\ninterface Ethernet0/3\n!\ninterface Ethernet1/0\n!\ninterface Ethernet1/1\n!\ninterface Ethernet1/2\n!\ninterface Ethernet1/3\n!\ninterface Ethernet2/0\n!\ninterface Ethernet2/1\n!\ninterface Ethernet2/2\n!\ninterface Ethernet2/3\n!\ninterface Ethernet3/0\n!\ninterface Ethernet3/1\n!\ninterface Ethernet3/2\n!\ninterface Ethernet3/3\n!\ninterface Vlan1\n no ip address\n shutdown\n!\ninterface Vlan10\n ip address 192.168.1.2 255.255.255.0\n standby 1 ip 192.168.1.200\n standby 1 timers 3 9\n standby 1 priority 160\n standby 1 preempt\n standby 1 authentication md5 key-chain cisco\n!\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline vty 0 4\n login\n!\n!\nend\n",
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/multilayer_switch.svg",
+                "width": 51,
+                "x": 130,
+                "y": -152,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5001,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 48,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "SW1",
+                    "x": 18,
+                    "y": -25
+                },
+                "name": "SW1",
+                "node_id": "7dc8eb13-6750-486b-b89f-b1f273b443c0",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "ethernet_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "f16db44433beb3e8c828db5ddad1de8a",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l2-adventerprisek9-15.2d.bin",
+                    "private_config": null,
+                    "private_config_content": null,
+                    "ram": 256,
+                    "serial_adapters": 0,
+                    "startup_config": "startup-config.cfg",
+                    "startup_config_content": "\n!\n! Last configuration change at 17:59:43 UTC Mon Aug 21 2017\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\nservice compress-config\n!\nhostname SW1\n!\nboot-start-marker\nboot-end-marker\n!\n!\nlogging discriminator EXCESS severity drops 6 msg-body drops EXCESSCOLL \nlogging buffered 50000\nlogging console discriminator EXCESS\n!\nno aaa new-model\n!\n!\n!\n!\n!\nno ip icmp rate-limit unreachable\n!\n!\n!\nno ip domain-lookup\nip cef\nno ipv6 cef\n!\nkey chain cisco\n key 1\n  key-string cisco\n   cryptographic-algorithm hmac-sha-512\n!\n!\n!\nspanning-tree mode rapid-pvst\nspanning-tree extend system-id\n!\nvlan internal allocation policy ascending\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Ethernet0/0\n switchport trunk encapsulation dot1q\n switchport mode trunk\n!\ninterface Ethernet0/1\n switchport trunk encapsulation dot1q\n switchport mode trunk\n duplex auto\n!\ninterface Ethernet0/2\n!\ninterface Ethernet0/3\n!\ninterface Ethernet1/0\n!\ninterface Ethernet1/1\n!\ninterface Ethernet1/2\n!\ninterface Ethernet1/3\n!\ninterface Ethernet2/0\n!\ninterface Ethernet2/1\n!\ninterface Ethernet2/2\n!\ninterface Ethernet2/3\n!\ninterface Ethernet3/0\n!\ninterface Ethernet3/1\n!\ninterface Ethernet3/2\n!\ninterface Ethernet3/3\n!\ninterface Vlan1\n no ip address\n shutdown\n!\ninterface Vlan10\n ip address 192.168.1.1 255.255.255.0\n standby 1 ip 192.168.1.200\n standby 1 timers 3 9\n standby 1 priority 200\n standby 1 preempt\n standby 1 authentication md5 key-chain cisco\n!\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline vty 0 4\n login\n!\n!\nend\n",
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/multilayer_switch.svg",
+                "width": 51,
+                "x": -222,
+                "y": -152,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5002,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 32,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "SW3",
+                    "x": 18,
+                    "y": -25
+                },
+                "name": "SW3",
+                "node_id": "e8790c1d-b735-468d-9108-f55207e3432a",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "ethernet_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "f16db44433beb3e8c828db5ddad1de8a",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l2-adventerprisek9-15.2d.bin",
+                    "private_config": null,
+                    "private_config_content": null,
+                    "ram": 256,
+                    "serial_adapters": 0,
+                    "startup_config": "startup-config.cfg",
+                    "startup_config_content": "\n!\n! Last configuration change at 17:53:41 UTC Mon Aug 21 2017\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\nservice compress-config\n!\nhostname SW3\n!\nboot-start-marker\nboot-end-marker\n!\n!\nlogging discriminator EXCESS severity drops 6 msg-body drops EXCESSCOLL \nlogging buffered 50000\nlogging console discriminator EXCESS\n!\nno aaa new-model\n!\n!\n!\n!\n!\nno ip icmp rate-limit unreachable\n!\n!\n!\nno ip domain-lookup\nip cef\nno ipv6 cef\n!\n!\n!\nspanning-tree mode rapid-pvst\nspanning-tree extend system-id\n!\nvlan internal allocation policy ascending\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Ethernet0/0\n!\ninterface Ethernet0/1\n switchport trunk encapsulation dot1q\n switchport mode trunk\n!\ninterface Ethernet0/2\n switchport trunk encapsulation dot1q\n switchport mode trunk\n!\ninterface Ethernet0/3\n!\ninterface Ethernet1/0\n!\ninterface Ethernet1/1\n!\ninterface Ethernet1/2\n!\ninterface Ethernet1/3\n!\ninterface Ethernet2/0\n!\ninterface Ethernet2/1\n!\ninterface Ethernet2/2\n!\ninterface Ethernet2/3\n!\ninterface Ethernet3/0\n!\ninterface Ethernet3/1\n!\ninterface Ethernet3/2\n!\ninterface Ethernet3/3\n!\ninterface Vlan1\n no ip address\n shutdown\n!\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline vty 0 4\n login\n!\n!\nend\n",
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/ethernet_switch.svg",
+                "width": 72,
+                "x": 120,
+                "y": 127,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5003,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 32,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "SW4",
+                    "x": 18,
+                    "y": -25
+                },
+                "name": "SW4",
+                "node_id": "a2b4ed48-dbcb-4d6a-aeb5-4523c9b74f5e",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "ethernet_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "f16db44433beb3e8c828db5ddad1de8a",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l2-adventerprisek9-15.2d.bin",
+                    "private_config": null,
+                    "private_config_content": null,
+                    "ram": 256,
+                    "serial_adapters": 0,
+                    "startup_config": "startup-config.cfg",
+                    "startup_config_content": "\n!\n! Last configuration change at 17:54:15 UTC Mon Aug 21 2017\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\nservice compress-config\n!\nhostname SW4\n!\nboot-start-marker\nboot-end-marker\n!\n!\nlogging discriminator EXCESS severity drops 6 msg-body drops EXCESSCOLL \nlogging buffered 50000\nlogging console discriminator EXCESS\n!\nno aaa new-model\n!\n!\n!\n!\n!\nno ip icmp rate-limit unreachable\n!\n!\n!\nno ip domain-lookup\nip cef\nno ipv6 cef\n!\n!\n!\nspanning-tree mode rapid-pvst\nspanning-tree extend system-id\n!\nvlan internal allocation policy ascending\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Ethernet0/0\n switchport trunk encapsulation dot1q\n switchport mode trunk\n!\ninterface Ethernet0/1\n switchport trunk encapsulation dot1q\n switchport mode trunk\n!\ninterface Ethernet0/2\n!\ninterface Ethernet0/3\n!\ninterface Ethernet1/0\n!\ninterface Ethernet1/1\n!\ninterface Ethernet1/2\n!\ninterface Ethernet1/3\n!\ninterface Ethernet2/0\n!\ninterface Ethernet2/1\n!\ninterface Ethernet2/2\n!\ninterface Ethernet2/3\n!\ninterface Ethernet3/0\n!\ninterface Ethernet3/1\n!\ninterface Ethernet3/2\n!\ninterface Ethernet3/3\n!\ninterface Vlan1\n no ip address\n shutdown\n!\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline vty 0 4\n login\n!\n!\nend\n",
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/ethernet_switch.svg",
+                "width": 72,
+                "x": -232,
+                "y": 127,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "2.0.3"
+}

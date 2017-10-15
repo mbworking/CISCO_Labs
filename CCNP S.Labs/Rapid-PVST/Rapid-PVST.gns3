@@ -1,0 +1,221 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "name": "Rapid-PVST",
+    "project_id": "124db060-a762-4684-b684-0fbf22b457a2",
+    "revision": 7,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "topology": {
+        "computes": [],
+        "drawings": [],
+        "links": [
+            {
+                "link_id": "4fd4aabe-a19e-476b-88ce-986e7a48a344",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 37,
+                            "y": -49
+                        },
+                        "node_id": "676cf342-1b07-4408-b56c-189693ba8d06",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/0",
+                            "x": -32,
+                            "y": 36
+                        },
+                        "node_id": "abc61385-b381-40c9-a66b-ec85c7df0571",
+                        "port_number": 0
+                    }
+                ]
+            },
+            {
+                "link_id": "c1a4ebea-a702-4b83-9ccd-d8f1e1422cbc",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 74,
+                            "y": 31
+                        },
+                        "node_id": "abc61385-b381-40c9-a66b-ec85c7df0571",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": -9,
+                            "y": -37
+                        },
+                        "node_id": "2503c37f-1bb3-45f9-a32c-23cbef2f6a2c",
+                        "port_number": 1
+                    }
+                ]
+            },
+            {
+                "link_id": "9f8757a7-52b3-4abf-a7f0-77b61766037f",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/0",
+                            "x": -31,
+                            "y": 30
+                        },
+                        "node_id": "2503c37f-1bb3-45f9-a32c-23cbef2f6a2c",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/2",
+                            "x": 74,
+                            "y": 9
+                        },
+                        "node_id": "676cf342-1b07-4408-b56c-189693ba8d06",
+                        "port_number": 2
+                    }
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "vm",
+                "console": 5000,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 32,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "SW1",
+                    "x": 18,
+                    "y": -25
+                },
+                "name": "SW1",
+                "node_id": "abc61385-b381-40c9-a66b-ec85c7df0571",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "ethernet_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "f16db44433beb3e8c828db5ddad1de8a",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l2-adventerprisek9-15.2d.bin",
+                    "private_config": null,
+                    "private_config_content": null,
+                    "ram": 256,
+                    "serial_adapters": 0,
+                    "startup_config": "startup-config.cfg",
+                    "startup_config_content": "!\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\n!\nhostname SW1\n!\n!\n!\nlogging discriminator EXCESS severity drops 6 msg-body drops EXCESSCOLL \nlogging buffered 50000\nlogging console discriminator EXCESS\n!\nno ip icmp rate-limit unreachable\n!\nip cef\nno ip domain-lookup\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\ninterface Ethernet0/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Vlan1\n no ip address\n shutdown\n!\n!\n!\n!\n!\n!\n!\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n!\nend\n",
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/ethernet_switch.svg",
+                "width": 72,
+                "x": -132,
+                "y": -167,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5001,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 32,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "SW2",
+                    "x": 18,
+                    "y": -25
+                },
+                "name": "SW2",
+                "node_id": "676cf342-1b07-4408-b56c-189693ba8d06",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "ethernet_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "f16db44433beb3e8c828db5ddad1de8a",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l2-adventerprisek9-15.2d.bin",
+                    "private_config": null,
+                    "private_config_content": null,
+                    "ram": 256,
+                    "serial_adapters": 0,
+                    "startup_config": "startup-config.cfg",
+                    "startup_config_content": "!\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\n!\nhostname SW2\n!\n!\n!\nlogging discriminator EXCESS severity drops 6 msg-body drops EXCESSCOLL \nlogging buffered 50000\nlogging console discriminator EXCESS\n!\nno ip icmp rate-limit unreachable\n!\nip cef\nno ip domain-lookup\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\ninterface Ethernet0/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Vlan1\n no ip address\n shutdown\n!\n!\n!\n!\n!\n!\n!\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n!\nend\n",
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/ethernet_switch.svg",
+                "width": 72,
+                "x": -305,
+                "y": 67,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5002,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 32,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "SW3",
+                    "x": 24,
+                    "y": -21
+                },
+                "name": "SW3",
+                "node_id": "2503c37f-1bb3-45f9-a32c-23cbef2f6a2c",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "ethernet_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "f16db44433beb3e8c828db5ddad1de8a",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l2-adventerprisek9-15.2d.bin",
+                    "private_config": null,
+                    "private_config_content": null,
+                    "ram": 256,
+                    "serial_adapters": 0,
+                    "startup_config": "startup-config.cfg",
+                    "startup_config_content": "!\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\n!\nhostname SW3\n!\n!\n!\nlogging discriminator EXCESS severity drops 6 msg-body drops EXCESSCOLL \nlogging buffered 50000\nlogging console discriminator EXCESS\n!\nno ip icmp rate-limit unreachable\n!\nip cef\nno ip domain-lookup\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\ninterface Ethernet0/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Vlan1\n no ip address\n shutdown\n!\n!\n!\n!\n!\n!\n!\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n!\nend\n",
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/ethernet_switch.svg",
+                "width": 72,
+                "x": 60,
+                "y": 3,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "2.0.3"
+}

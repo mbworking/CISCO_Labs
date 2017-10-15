@@ -1,0 +1,10 @@
+Sep 29 19:51:48.480 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Sep 29 19:51:48.480 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52062.
+Sep 29 19:51:48.558 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 29 19:51:48.573 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\musta\GNS3\projects\CCNP Security - SENSS\Port-Security\project-files\dynamips 
+Sep 29 19:51:48.585 GENERAL: working_dir=C:\Users\musta\GNS3\projects\CCNP Security - SENSS\Port-Security\project-files\dynamips
+Sep 29 19:51:48.589 HYPERVISOR: exec_cmd: nio_bridge create Hub1 
+Sep 29 19:53:45.864 HYPERVISOR: exec_cmd: nio_bridge delete Hub1 
+Sep 29 19:53:45.872 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 29 19:53:46.204 HYPERVISOR: Stopped.
+Sep 29 19:53:46.204 GENERAL: reset done.

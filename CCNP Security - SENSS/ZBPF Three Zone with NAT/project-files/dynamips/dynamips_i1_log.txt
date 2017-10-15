@@ -1,0 +1,10 @@
+Oct 04 15:01:40.862 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Oct 04 15:01:40.862 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 65279.
+Oct 04 15:01:41.271 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 04 15:01:41.278 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\musta\GNS3\projects\CCNP Security - SENSS\ZBPF Three Zone with NAT\project-files\dynamips 
+Oct 04 15:01:41.291 GENERAL: working_dir=C:\Users\musta\GNS3\projects\CCNP Security - SENSS\ZBPF Three Zone with NAT\project-files\dynamips
+Oct 04 15:01:41.294 HYPERVISOR: exec_cmd: ethsw create SW1 
+Oct 04 15:04:00.553 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Oct 04 15:04:00.561 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 04 15:04:00.861 HYPERVISOR: Stopped.
+Oct 04 15:04:00.861 GENERAL: reset done.

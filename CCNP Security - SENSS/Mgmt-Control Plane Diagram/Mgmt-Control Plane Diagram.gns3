@@ -1,0 +1,421 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "name": "Mgmt-Control Plane Diagram",
+    "project_id": "fee99619-890f-45aa-943e-b2bbebdb783c",
+    "revision": 7,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "topology": {
+        "computes": [],
+        "drawings": [
+            {
+                "drawing_id": "44d2ffb7-cd01-4d02-8846-59a9667f5061",
+                "rotation": 0,
+                "svg": "<svg height=\"190\" width=\"171\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">Control-Plane Security :\n  EIGRP Authentication *\n  CoPP\n  CPPr\n\nManagement-Plane Security :\n  MPP\n  SSH - HTTPS \n  SNMPv3 *\n  NTP *\n  Logging *\n  Netflow *\n  AAA *</text></svg>",
+                "x": 280,
+                "y": -207,
+                "z": 1
+            },
+            {
+                "drawing_id": "99126513-a548-4315-be97-0579060d8aa6",
+                "rotation": 0,
+                "svg": "<svg height=\"36\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">EIGRP 10\n192.168.134.0/24</text></svg>",
+                "x": -43,
+                "y": -130,
+                "z": 1
+            },
+            {
+                "drawing_id": "501ad55f-b865-43cd-be81-12d5534f7c23",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"73\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">10.0.0.0/24</text></svg>",
+                "x": -325,
+                "y": 129,
+                "z": 1
+            },
+            {
+                "drawing_id": "e46c1ef6-e5d0-4054-97f2-4fa6532f3802",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"18\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.1</text></svg>",
+                "x": -210,
+                "y": 142,
+                "z": 1
+            },
+            {
+                "drawing_id": "6f7e0c39-6fd7-49d5-a628-b58c780b49f1",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"25\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.50</text></svg>",
+                "x": -367,
+                "y": 146,
+                "z": 1
+            }
+        ],
+        "links": [
+            {
+                "link_id": "debe0d55-8d60-40ab-b92c-400af64cec3f",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": 72,
+                            "y": 21
+                        },
+                        "node_id": "d45b4df5-0d4d-431a-a088-5738e7074926",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/0",
+                            "x": -32,
+                            "y": 27
+                        },
+                        "node_id": "f5cba474-1776-48cb-b8b1-dd397ed26df0",
+                        "port_number": 0
+                    }
+                ]
+            },
+            {
+                "link_id": "4a36715e-7b61-4317-8b22-79c436045e2b",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/0",
+                            "x": -47,
+                            "y": -9
+                        },
+                        "node_id": "ac8d41f8-a03e-4b22-ae7a-5eff8138b589",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "Gi0/0",
+                            "x": 59,
+                            "y": 51
+                        },
+                        "node_id": "f826da8e-c59f-45d5-9622-db4f7d7cc007",
+                        "port_number": 0
+                    }
+                ]
+            },
+            {
+                "link_id": "0085fe8e-0e5e-49a1-aa1a-457c0c209889",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 23,
+                            "y": 54
+                        },
+                        "node_id": "ac8d41f8-a03e-4b22-ae7a-5eff8138b589",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 44,
+                            "y": -16
+                        },
+                        "node_id": "f5cba474-1776-48cb-b8b1-dd397ed26df0",
+                        "port_number": 1
+                    }
+                ]
+            },
+            {
+                "link_id": "d00e9cb4-47dd-4f86-87bb-4caa95f8979a",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/2",
+                            "x": 98,
+                            "y": 10
+                        },
+                        "node_id": "ac8d41f8-a03e-4b22-ae7a-5eff8138b589",
+                        "port_number": 2
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": -3,
+                            "y": 6
+                        },
+                        "node_id": "032af5ea-e229-4735-a72e-a407d08b29e4",
+                        "port_number": 1
+                    }
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "vm",
+                "console": 5006,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R1",
+                    "x": 0,
+                    "y": -26
+                },
+                "name": "R1",
+                "node_id": "f5cba474-1776-48cb-b8b1-dd397ed26df0",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "45e99761a95cbd3ee3924ecf0f3d89e5",
+                    "nvram": 128,
+                    "path": "L3-ADVENTERPRISE9-15.5.2T.bin",
+                    "private_config": "private-config.cfg",
+                    "private_config_content": "\ncrypto RSA-key-pair SSH_RSA 0 1506713677\n 30820276 02010030 0D06092A 864886F7 0D010101 05000482 02603082 025C0201 \n 00028181 00CD0631 E6567CE4 907E1C26 61D5395B 94252B05 3399C3FA B072EBDE \n F8EAD5F7 C62572D8 3F6B82D1 64E102E5 20EC8D35 1ED91365 0AD9AE51 4420509A \n 2B12254C FA6E0D5D 11F9F80D 62BCA1B6 4330B897 3854AEAF 000EAAE0 50EF87A9 \n CE4D01B5 34E53A2A B4667791 3BF8D08F 8D1902A1 178DF88C 91484810 BBDB0029 \n 72CA06BC DB020301 00010281 800CD858 83FFE32F 46C63FE9 3FB3E636 10A00B83 \n F5E9AA57 A87A6AC0 BB83AB08 2D07E79C 18CD1993 18E8E80F 86F28B1E 4AE27ACE \n 97D16F94 73DA3A72 8E4442C6 01C5F116 37FA071C C9C4F39D 878B465B 38F26CD0 \n 544E2DC6 025D8857 F435D030 5079FCE6 A3A014FB 0DA98807 64A4530D C1BC1A61 \n 771BAB2E 5CD3AE2D BB11D1B3 81024100 E0F6D12D BE32E7D5 3F393519 B20D9E19 \n 2C1AD729 70F52EA3 1EA47D0A 40DF33AA 8D5C9921 6096EC47 A96AD812 EDDDFB1C \n 82E95FF6 84BB391D 9B088B6D FE1D7EE1 024100E9 4F25F2EE A3ED4290 667ABAF6 \n E16F208D 58B0BD25 7F908054 A57B89F4 2B1A2055 49244EE4 EB8BF9A2 B6962445 \n 5923DFBE 5D42B520 EDDA7C54 7AB58224 C55F3B02 400D7F41 75991FBC C1129600 \n 15969532 93180E54 326C5089 87C7E2DE 8DAAEEB9 4ED64463 FB98ABF5 692744FD \n C9C4F3B8 89316187 1C674244 5EFE5A38 E35487B8 81024100 D6E94A8A B1DA9CC6 \n 311FC534 0E1070FE 2A55A550 46877043 5635AD4B D17816B3 EBFBD90F 377DE64D \n 88DDEA05 F53F7C75 30F4D56A E5AF5410 2CFD6FCF 3731FC5B 02406252 7850528B \n 13362F31 C5292A77 ACF983F7 25F7D3C4 8EDBA9D7 748266E3 358DC5CC D75A8E8A \n 51819ED9 C59C5144 019B4EDB 60597B2F D2D413F6 498B4BF0 6984\n quit\n 30819F30 0D06092A 864886F7 0D010101 05000381 8D003081 89028181 00CD0631 \n E6567CE4 907E1C26 61D5395B 94252B05 3399C3FA B072EBDE F8EAD5F7 C62572D8 \n 3F6B82D1 64E102E5 20EC8D35 1ED91365 0AD9AE51 4420509A 2B12254C FA6E0D5D \n 11F9F80D 62BCA1B6 4330B897 3854AEAF 000EAAE0 50EF87A9 CE4D01B5 34E53A2A \n B4667791 3BF8D08F 8D1902A1 178DF88C 91484810 BBDB0029 72CA06BC DB020301 0001\n quit\nend\n",
+                    "ram": 256,
+                    "serial_adapters": 2,
+                    "startup_config": "startup-config.cfg",
+                    "startup_config_content": "\n!\n! Last configuration change at 20:07:22 UTC Fri Sep 29 2017\n! NVRAM config last updated at 20:08:37 UTC Fri Sep 29 2017\n!\nversion 15.5\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\n!\nhostname R1\n!\nboot-start-marker\nboot-end-marker\n!\n!\nno logging buffered\nlogging console warnings\nenable secret 5 $1$rLc9$X1jAe2gPwtcbIhIqUK0y/.\n!\naaa new-model\n!\n!\naaa group server tacacs+ TACACS_SERVER\n server name ACS\n ip tacacs source-interface Loopback0\n!\naaa authentication login AUTHENTICATION_LOGIN group TACACS_SERVER local\naaa authorization config-commands\naaa authorization exec AUTHORIZATION_EXEC group TACACS_SERVER local \naaa authorization commands 15 AUTHORIZATION_CMD group TACACS_SERVER local \naaa accounting exec ACCOUNTING_EXEC start-stop group TACACS_SERVER\naaa accounting commands 15 ACCOUNTING_CMD start-stop group TACACS_SERVER\n!\n!\n!\n!\n!\naaa session-id common\n!\n!\n!\nbsd-client server url https://cloudsso.cisco.com/as/token.oauth2\nmmi polling-interval 60\nno mmi auto-configure\nno mmi pvc\nmmi snmp-timeout 180\n!\n!\n!\n!\n!\nno ip icmp rate-limit unreachable\n!\n!\n!\n!\n!\n!\n!\n!\n\n\n!\n!\n!\n!\nno ip domain lookup\nip cef\nno ipv6 cef\n!\n!\nflow exporter FLOW_EX\n destination 192.168.134.100\n source Loopback0\n transport udp 9996\n!\n!\nflow monitor FLOW_MO\n exporter FLOW_EX\n record netflow-original\n!\nmultilink bundle-name authenticated\n!\n!\n!\nkey chain AUTHE_EIGRP\n key 10\n  key-string cisco\n!\n!\n!\n!\n!\ncts logging verbose\n!\n!\nusername cisco privilege 15 secret 5 $1$LXVu$e3Xz7MmUO51LDwgYcv2R3/\n!\nredundancy\n!\n!\nip tcp synwait-time 5\nip ssh version 2\n!\nclass-map match-all CLASS_CPPr\n match access-group name ACL_CPPr\n!\npolicy-map POLICY_CPPr\n class CLASS_CPPr\n  police rate 100 pps conform-action transmit  exceed-action drop \n!\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 1.1.1.1 255.255.255.255\n!\ninterface Ethernet0/0\n ip address 10.0.0.1 255.255.255.0\n ip flow monitor FLOW_MO input\n!\ninterface Ethernet0/1\n ip address 192.168.134.1 255.255.255.0\n ip authentication mode eigrp 10 md5\n ip authentication key-chain eigrp 10 AUTHE_EIGRP\n!\ninterface Ethernet0/2\n no ip address\n shutdown\n!\ninterface Ethernet0/3\n no ip address\n shutdown\n!\ninterface Ethernet1/0\n no ip address\n shutdown\n!\ninterface Ethernet1/1\n no ip address\n shutdown\n!\ninterface Ethernet1/2\n no ip address\n shutdown\n!\ninterface Ethernet1/3\n no ip address\n shutdown\n!\ninterface Serial2/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/1\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/2\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/3\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial3/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial3/1\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial3/2\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial3/3\n no ip address\n shutdown\n serial restart-delay 0\n!\n!\nrouter eigrp 10\n network 1.1.1.1 0.0.0.0\n network 192.168.134.0\n!\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\n!\nip access-list extended ACL_CPPr\n permit eigrp any any\n!\nlogging trap debugging\nlogging host 192.168.134.100\n!\nsnmp-server group Cisco v3 priv \nsnmp-server group SNMP_GROUP v3 priv \nsnmp-server host 192.168.134.100 version 3 priv Cisco \n!\ntacacs server ACS\n address ipv4 192.168.134.100\n key cisco\n!\n!\ncontrol-plane host\n service-policy input POLICY_CPPr\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\n!\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline vty 0 4\n authorization commands 15 AUTHORIZATION_CMD\n authorization exec AUTHORIZATION_EXEC\n accounting commands 15 ACCOUNTING_CMD\n accounting exec ACCOUNTING_EXEC\n login authentication AUTHENTICATION_LOGIN\n transport input all\n!\nntp authentication-key 10 md5 070C285F4D06 7\nntp authenticate\nntp trusted-key 10\nntp server 192.168.134.200 key 10 prefer\n!\nend\n",
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/router.svg",
+                "width": 66,
+                "x": -193,
+                "y": 144,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5007,
+                "console_type": "telnet",
+                "first_port_name": "Management0/0",
+                "height": 60,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "ASA-1",
+                    "x": 4,
+                    "y": -25
+                },
+                "name": "ASA-1",
+                "node_id": "f826da8e-c59f-45d5-9622-db4f7d7cc007",
+                "node_type": "qemu",
+                "port_name_format": "Gi0/{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "e1000",
+                    "adapters": 8,
+                    "bios_image": "",
+                    "bios_image_md5sum": null,
+                    "boot_priority": "c",
+                    "cdrom_image": "",
+                    "cdrom_image_md5sum": null,
+                    "cpu_throttling": 0,
+                    "cpus": 1,
+                    "hda_disk_image": "asav981-5.qcow2",
+                    "hda_disk_image_md5sum": "aa9462c9c745c674bf102947e0ff0359",
+                    "hda_disk_interface": "virtio",
+                    "hdb_disk_image": "",
+                    "hdb_disk_image_md5sum": null,
+                    "hdb_disk_interface": "ide",
+                    "hdc_disk_image": "",
+                    "hdc_disk_image_md5sum": null,
+                    "hdc_disk_interface": "ide",
+                    "hdd_disk_image": "",
+                    "hdd_disk_image_md5sum": null,
+                    "hdd_disk_interface": "ide",
+                    "initrd": "",
+                    "initrd_md5sum": null,
+                    "kernel_command_line": "",
+                    "kernel_image": "",
+                    "kernel_image_md5sum": null,
+                    "legacy_networking": false,
+                    "linked_clone": true,
+                    "mac_address": "00:78:3c:c0:07:00",
+                    "options": "-nographic",
+                    "platform": "x86_64",
+                    "process_priority": "normal",
+                    "qemu_path": "/usr/bin/qemu-system-x86_64",
+                    "ram": 2048,
+                    "usage": "There is no default password and enable password. A default configuration is present. ASAv goes through a double-boot before becoming active. This is normal and expected."
+                },
+                "symbol": ":/symbols/asa.svg",
+                "width": 52,
+                "x": -357,
+                "y": -211,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5009,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "Remote_Router",
+                    "x": -14,
+                    "y": -25
+                },
+                "name": "Remote_Router",
+                "node_id": "d45b4df5-0d4d-431a-a088-5738e7074926",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "aux": null,
+                    "clock_divisor": 4,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 1,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60189214",
+                    "idlesleep": 30,
+                    "image": "c7200-adventerprisek9-mz.152-4.M7.image",
+                    "image_md5sum": "1a698eb389ef23f46286211215711705",
+                    "mac_addr": "ca01.06f7.0000",
+                    "midplane": "vxr",
+                    "mmap": true,
+                    "npe": "npe-400",
+                    "nvram": 512,
+                    "platform": "c7200",
+                    "power_supplies": [
+                        1,
+                        1
+                    ],
+                    "private_config": "configs/i1_private-config.cfg",
+                    "private_config_content": "\ncrypto RSA-key-pair SSH_RSA 0 1506708354\n 30820276 02010030 0D06092A 864886F7 0D010101 05000482 02603082 025C0201 \n 00028181 008F3CD9 95C110D5 40A07543 235AF849 505E5CD8 42716EAC 9E2C3818 \n 89D0E014 D0BC7C69 F5CC9F46 9B94ADC8 64D9EA87 06B90CEF ABAB3E92 4FC997EE \n DC543174 8C19C961 BB1A5AAD DFAA58F0 AA2DDA8F 5B0ABC5C 6E2D754B 5362801F \n 2E509B60 2F82B45E 537E8F8D F2568A63 61661C8A 4913A8FF EA424326 A7271FCC \n 49BBE6FA 53020301 00010281 802F4E1D 5E03E117 4CBCB17D 76D3B864 1E12CBFE \n F0129E46 8C067690 4413A3AD BC3243B4 8AE50545 40649DF0 2CBE7B62 14AA50C7 \n 669EAB8F 8EA23977 3D74E0D0 68660A3C EA20F4EE 5106FA31 AF27B422 24E9A082 \n 7411F185 8E1DFB4C EF4FF93F 6B61F2DC E7D6EC71 25F37B57 6A22AFB3 48BD3EED \n F7A6D699 44E0D6BB E4A8C455 21024100 C8F18148 D7BEAEFE 0F6C643E 46F70300 \n 921B3C1C 73EE66DA 20AD7884 F3750610 B0078BCB 197CA6EF 83301B95 022991E3 \n E7EDB183 E06DFA26 6A266359 921221A5 024100B6 7BC6476B EC4A8229 DC1FAF4D \n C05FD243 F494FB3C 469A4B52 D68B187C 9AE2E39E E3E7EEC7 25728CDF 2A45D757 \n 7C0DEAA1 0506B174 8A902567 2818E521 D2FA9702 410099AE B34D4DCC 05B44381 \n 87CD65A3 0785C938 D12985B5 00AEB52D 572E7FB0 B1B9D397 81E00C97 1C69B470 \n F7B76816 F9005062 A7509036 2C8A72C6 F7570AF3 990D0240 1E802DB1 FE5DEE4E \n 3744ED9E D576140E 0701B86D 0DB41752 03B48C67 395C8213 DD98E649 48CBFF8B \n 80398696 E9AE787D 0110DFFF 85252BD6 B499451F F739565D 024058B6 FA02CA02 \n F0D3723F AEBD1D45 FACA2545 8094A0EB B649C3B9 59E57F49 A17D822E CC85E2FD \n CF8E291A 8CECBF15 2B94FBB2 E370BD91 C220B8EC 05FCE07D F572\n quit\n 30819F30 0D06092A 864886F7 0D010101 05000381 8D003081 89028181 008F3CD9 \n 95C110D5 40A07543 235AF849 505E5CD8 42716EAC 9E2C3818 89D0E014 D0BC7C69 \n F5CC9F46 9B94ADC8 64D9EA87 06B90CEF ABAB3E92 4FC997EE DC543174 8C19C961 \n BB1A5AAD DFAA58F0 AA2DDA8F 5B0ABC5C 6E2D754B 5362801F 2E509B60 2F82B45E \n 537E8F8D F2568A63 61661C8A 4913A8FF EA424326 A7271FCC 49BBE6FA 53020301 0001\n quit\ncrypto RSA-key-pair TP-self-signed-4279256517 0 1506708546\n 30820276 02010030 0D06092A 864886F7 0D010101 05000482 02603082 025C0201 \n 00028181 00A87085 6B5AF41C A4526F52 31475B0D 7EC16F0E D6ED89ED 11C9AC71 \n 14ACC1D7 6B561F74 C021334B 8FD51110 8AD37AD6 D9AF947E 4DFC8CBB 942BD934 \n F46C3E65 85370EA4 71DDB3BE C3FF0223 9412D845 66BA628D 4A19324F 5ED55BE0 \n 7C0FFA1E EB5B882D 5014910B 5A29C531 E72C47FD 79D160D1 85D2FF88 A1E370C5 \n E2A67534 3B020301 00010281 80416F95 2563AC3A 044C521A E8320459 75C8C7D0 \n 4806F7F2 355AD7B7 068526B8 FD65F3CA 73697278 04648DC0 936E1CE6 A2A2E759 \n 3A0AC6D1 887A9063 5621470C 40D6A39B E576B257 7ABA3D6C 554B2E6A 4C48486D \n 5EBAB4B1 12FEDD8E B270C4F4 84B25144 DD46EF6A 491418AE 85D52E7B 799EBA50 \n 5D5F6417 EFE637B7 AC755E95 E1024100 C137135A 3CAC0F20 5640C03C 1DE3709B \n 6669ABE9 773C29AA 0C5B1CC3 CA431C16 5227E908 FA04400E A62B3251 2D00B6B3 \n 3B454CA3 76862852 089EB50C D1EB0075 024100DF 2C72126A 21BA0BA6 94FFE47D \n 818BC495 D868008B E2F6EEFB EA778B12 09CF9D95 C39E43AF E1341A6B F988DF1E \n BA2DA321 63CDAF7C 45FB5C23 F1BD7521 87CBEF02 4100B3BA 29944CCF B81A5A61 \n 4CF01ED5 4C1021C9 B6122BC9 98F00722 51B58655 BAB0C0A7 434C0855 1FC900A5 \n 39DEECBF B7332DB5 1EBF0727 70262EC2 82A37438 E7690240 6B17EFF1 883E8101 \n C04175FE 567FC8EB 6020C5DF A54117D0 1CD129E6 719485AD 90459BF7 CD399B80 \n 265A4B65 0E60B72F B601279D D35BDDC0 1C7B8FB7 DA8C48BF 0240705A 40C6615C \n B97E1D42 91FA63AA EE48D0BE FF461BEB 01B82605 04093889 F8881C3B 59198ACF \n 7EF8E90A E5A693DB 93CD246D DF924654 F639756F DD93F4BD DB50\n quit\n 30819F30 0D06092A 864886F7 0D010101 05000381 8D003081 89028181 00A87085 \n 6B5AF41C A4526F52 31475B0D 7EC16F0E D6ED89ED 11C9AC71 14ACC1D7 6B561F74 \n C021334B 8FD51110 8AD37AD6 D9AF947E 4DFC8CBB 942BD934 F46C3E65 85370EA4 \n 71DDB3BE C3FF0223 9412D845 66BA628D 4A19324F 5ED55BE0 7C0FFA1E EB5B882D \n 5014910B 5A29C531 E72C47FD 79D160D1 85D2FF88 A1E370C5 E2A67534 3B020301 0001\n quit\nend\n",
+                    "ram": 512,
+                    "sensors": [
+                        22,
+                        22,
+                        22,
+                        22
+                    ],
+                    "slot0": "C7200-IO-FE",
+                    "slot1": "PA-FE-TX",
+                    "slot2": "PA-GE",
+                    "slot3": "PA-GE",
+                    "slot4": "PA-4T+",
+                    "slot5": null,
+                    "slot6": null,
+                    "sparsemem": true,
+                    "startup_config": "configs/i1_startup-config.cfg",
+                    "startup_config_content": "!\n!\n!\n\n!\n! Last configuration change at 18:58:11 UTC Fri Sep 29 2017\nupgrade fpd auto\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\n!\nhostname Remote_Router\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\nno ip icmp rate-limit unreachable\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip cef\nno ipv6 cef\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-4279256517\n enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-4279256517\n revocation-check none\n rsakeypair TP-self-signed-4279256517\n!\n!\ncrypto pki certificate chain TP-self-signed-4279256517\n certificate self-signed 01 nvram:IOS-Self-Sig#1.cer\nusername cisco password 0 cisco\n!\nredundancy\n!\n!\nip tcp synwait-time 5\nip ssh version 2\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface FastEthernet0/0\n ip address 10.0.0.50 255.255.255.0\n duplex half\n!\ninterface FastEthernet1/0\n no ip address\n shutdown\n duplex half\n!\ninterface GigabitEthernet2/0\n no ip address\n shutdown\n negotiation auto\n!\ninterface GigabitEthernet3/0\n no ip address\n shutdown\n negotiation auto\n!\ninterface Serial4/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial4/1\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial4/2\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial4/3\n no ip address\n shutdown\n serial restart-delay 0\n!\nip forward-protocol nd\nno ip http server\nip http secure-server\n!\n!\n!\nno cdp log mismatch duplex\n!\n!\ncontrol-plane host\n management-interface FastEthernet0/0 allow ssh \n!\n!\ncontrol-plane\n!\n!\n!\nmgcp profile default\n!\n!\n!\ngatekeeper\n shutdown\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n login local\n transport input all\n!\n!\nend\n",
+                    "system_id": "FTX0945W0MY"
+                },
+                "symbol": ":/symbols/router.svg",
+                "width": 66,
+                "x": -439,
+                "y": 150,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5010,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "NTP_SERVER",
+                    "x": -7,
+                    "y": -25
+                },
+                "name": "NTP_SERVER",
+                "node_id": "032af5ea-e229-4735-a72e-a407d08b29e4",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "45e99761a95cbd3ee3924ecf0f3d89e5",
+                    "nvram": 128,
+                    "path": "L3-ADVENTERPRISE9-15.5.2T.bin",
+                    "private_config": null,
+                    "private_config_content": null,
+                    "ram": 256,
+                    "serial_adapters": 2,
+                    "startup_config": "startup-config.cfg",
+                    "startup_config_content": "\n!\n! Last configuration change at 19:05:50 UTC Fri Sep 29 2017\n! NVRAM config last updated at 20:08:33 UTC Fri Sep 29 2017\n!\nversion 15.5\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\n!\nhostname NTP_SERVER\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\n!\n!\n!\nbsd-client server url https://cloudsso.cisco.com/as/token.oauth2\nmmi polling-interval 60\nno mmi auto-configure\nno mmi pvc\nmmi snmp-timeout 180\n!\n!\n!\n!\n!\nno ip routing\nno ip icmp rate-limit unreachable\n!\n!\n!\n!\n!\n!\n!\n!\n\n\n!\n!\n!\n!\nno ip domain lookup\nno ip cef\nno ipv6 cef\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\ncts logging verbose\n!\n!\n!\nredundancy\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Ethernet0/0\n no ip address\n no ip route-cache\n shutdown\n!\ninterface Ethernet0/1\n ip address 192.168.134.200 255.255.255.0\n no ip route-cache\n!\ninterface Ethernet0/2\n no ip address\n no ip route-cache\n shutdown\n!\ninterface Ethernet0/3\n no ip address\n no ip route-cache\n shutdown\n!\ninterface Ethernet1/0\n no ip address\n no ip route-cache\n shutdown\n!\ninterface Ethernet1/1\n no ip address\n no ip route-cache\n shutdown\n!\ninterface Ethernet1/2\n no ip address\n no ip route-cache\n shutdown\n!\ninterface Ethernet1/3\n no ip address\n no ip route-cache\n shutdown\n!\ninterface Serial2/0\n no ip address\n no ip route-cache\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/1\n no ip address\n no ip route-cache\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/2\n no ip address\n no ip route-cache\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/3\n no ip address\n no ip route-cache\n shutdown\n serial restart-delay 0\n!\ninterface Serial3/0\n no ip address\n no ip route-cache\n shutdown\n serial restart-delay 0\n!\ninterface Serial3/1\n no ip address\n no ip route-cache\n shutdown\n serial restart-delay 0\n!\ninterface Serial3/2\n no ip address\n no ip route-cache\n shutdown\n serial restart-delay 0\n!\ninterface Serial3/3\n no ip address\n no ip route-cache\n shutdown\n serial restart-delay 0\n!\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\n!\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\n!\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline vty 0 4\n login\n transport input none\n!\nntp authentication-key 10 md5 00071A150754 7\nntp trusted-key 10\nntp master\n!\nend\n",
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/router.svg",
+                "width": 66,
+                "x": 172,
+                "y": 75,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5011,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 32,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "SW1",
+                    "x": 18,
+                    "y": -25
+                },
+                "name": "SW1",
+                "node_id": "ac8d41f8-a03e-4b22-ae7a-5eff8138b589",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "ethernet_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "f16db44433beb3e8c828db5ddad1de8a",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l2-adventerprisek9-15.2d.bin",
+                    "private_config": null,
+                    "private_config_content": null,
+                    "ram": 256,
+                    "serial_adapters": 0,
+                    "startup_config": "startup-config.cfg",
+                    "startup_config_content": "\n!\n! Last configuration change at 19:10:16 UTC Fri Sep 29 2017\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\nservice compress-config\n!\nhostname SW1\n!\nboot-start-marker\nboot-end-marker\n!\n!\nlogging discriminator EXCESS severity drops 6 msg-body drops EXCESSCOLL \nlogging buffered 50000\nlogging console discriminator EXCESS\n!\nno aaa new-model\n!\n!\n!\n!\n!\nno ip icmp rate-limit unreachable\n!\n!\n!\nno ip domain-lookup\nip cef\nno ipv6 cef\n!\n!\n!\nspanning-tree mode rapid-pvst\nspanning-tree extend system-id\n!\nvlan internal allocation policy ascending\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Ethernet0/0\n!\ninterface Ethernet0/1\n!\ninterface Ethernet0/2\n!\ninterface Ethernet0/3\n!\ninterface Ethernet1/0\n!\ninterface Ethernet1/1\n!\ninterface Ethernet1/2\n!\ninterface Ethernet1/3\n!\ninterface Ethernet2/0\n!\ninterface Ethernet2/1\n!\ninterface Ethernet2/2\n!\ninterface Ethernet2/3\n!\ninterface Ethernet3/0\n!\ninterface Ethernet3/1\n!\ninterface Ethernet3/2\n!\ninterface Ethernet3/3\n!\ninterface Vlan1\n no ip address\n shutdown\n!\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline vty 0 4\n login\n!\n!\nend\n",
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/ethernet_switch.svg",
+                "width": 72,
+                "x": -135,
+                "y": -49,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "2.0.3"
+}
