@@ -15,7 +15,4 @@ L3-ADVENTERPRISE9-15.5.2T.bin
 
 asa.qcow2 (ASA)
 
-cisco-asav (you will find it on gns3 site)
-
-
 Enjoy, Good luck 
