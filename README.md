@@ -1,7 +1,7 @@
 # CISCO_Labs
 All labs for CCNP R&S, CCNA Security, CCNP Security SENSS
 
-be careful, you need the same requirement that i have so be sure that you have too
+be careful, you need the same requirements that i have so be sure that you have too
 
 c7200-adventerprisek9-mz.152-4.S6.bi
 
