@@ -1,0 +1,185 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "name": "MAC SPOOFING ATTACK_PortSecurity",
+    "project_id": "1bef8c0b-5a55-48ed-84ff-611424eb4237",
+    "revision": 7,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "topology": {
+        "computes": [],
+        "drawings": [],
+        "links": [
+            {
+                "link_id": "0ce4dac1-65ce-454f-969a-2b6c56ce3b29",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "eth0",
+                            "x": 70,
+                            "y": -3
+                        },
+                        "node_id": "747f639f-e08c-48bd-90a2-f8892109151b",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/0",
+                            "x": 5,
+                            "y": 42
+                        },
+                        "node_id": "1f52f868-7daf-4380-b4b2-2b46ab7ac046",
+                        "port_number": 0
+                    }
+                ]
+            },
+            {
+                "link_id": "8acc781c-262c-4401-a126-8d6a02a62a78",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/1",
+                            "x": 75,
+                            "y": 10
+                        },
+                        "node_id": "1f52f868-7daf-4380-b4b2-2b46ab7ac046",
+                        "port_number": 1
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "nat0",
+                            "x": -48,
+                            "y": 44
+                        },
+                        "node_id": "cb7b2fbd-a21b-4754-963a-ef2543bee911",
+                        "port_number": 0
+                    }
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "vm",
+                "console": null,
+                "console_type": null,
+                "first_port_name": null,
+                "height": 71,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "INTERNET",
+                    "x": 39,
+                    "y": -25
+                },
+                "name": "INTERNET",
+                "node_id": "cb7b2fbd-a21b-4754-963a-ef2543bee911",
+                "node_type": "nat",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "ports_mapping": [
+                        {
+                            "interface": "virbr0",
+                            "name": "nat0",
+                            "port_number": 0,
+                            "type": "ethernet"
+                        }
+                    ]
+                },
+                "symbol": ":/symbols/cloud.svg",
+                "width": 159,
+                "x": 118,
+                "y": -256,
+                "z": 0
+            },
+            {
+                "compute_id": "vm",
+                "console": 5004,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "Ubuntu-1",
+                    "x": -5,
+                    "y": -25
+                },
+                "name": "Ubuntu-1",
+                "node_id": "747f639f-e08c-48bd-90a2-f8892109151b",
+                "node_type": "docker",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapters": 1,
+                    "aux": 5005,
+                    "console_http_path": "/",
+                    "console_http_port": 80,
+                    "console_resolution": "1024x768",
+                    "container_id": "449c084cab737409e00c1f292cdb48497eb2b40461989f2d4590613dd82ca451",
+                    "environment": null,
+                    "image": "gns3/ubuntu:xenial",
+                    "start_command": null
+                },
+                "symbol": "linux_guest.svg",
+                "width": 65,
+                "x": -527,
+                "y": 31,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5000,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 32,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "SW1",
+                    "x": 15,
+                    "y": -25
+                },
+                "name": "SW1",
+                "node_id": "1f52f868-7daf-4380-b4b2-2b46ab7ac046",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "ethernet_adapters": 4,
+                    "l1_keepalives": false,
+                    "md5sum": "f16db44433beb3e8c828db5ddad1de8a",
+                    "nvram": 128,
+                    "path": "i86bi-linux-l2-adventerprisek9-15.2d.bin",
+                    "private_config": null,
+                    "private_config_content": null,
+                    "ram": 256,
+                    "serial_adapters": 0,
+                    "startup_config": "startup-config.cfg",
+                    "startup_config_content": "!\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\n!\nhostname SW1\n!\n!\n!\nlogging discriminator EXCESS severity drops 6 msg-body drops EXCESSCOLL \nlogging buffered 50000\nlogging console discriminator EXCESS\n!\nno ip icmp rate-limit unreachable\n!\nip cef\nno ip domain-lookup\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\ninterface Ethernet0/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet0/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet1/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet2/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/0\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/1\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/2\n no ip address\n no shutdown\n duplex auto\n!\ninterface Ethernet3/3\n no ip address\n no shutdown\n duplex auto\n!\ninterface Vlan1\n no ip address\n shutdown\n!\n!\n!\n!\n!\n!\n!\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n!\nend\n",
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/ethernet_switch.svg",
+                "width": 72,
+                "x": -280,
+                "y": -174,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "version": "2.0.3"
+}
