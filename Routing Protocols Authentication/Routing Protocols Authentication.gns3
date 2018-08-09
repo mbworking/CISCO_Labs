@@ -1,0 +1,238 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "grid_size": 75,
+    "name": "Routing Protocols Authentication",
+    "project_id": "db71e82e-4c5e-4cbc-bcef-960319261e53",
+    "revision": 8,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "show_grid": false,
+    "show_interface_labels": true,
+    "show_layers": false,
+    "snap_to_grid": false,
+    "supplier": null,
+    "topology": {
+        "computes": [],
+        "drawings": [
+            {
+                "drawing_id": "02d150dc-b1e8-46ba-89cb-d52e2c52d329",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"94\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">192.168.1.0/24</text></svg>",
+                "x": 3,
+                "y": -100,
+                "z": 1
+            },
+            {
+                "drawing_id": "a562405a-bba6-4d7d-b070-3d4cd04797ac",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"66\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">1.1.1.0/24</text></svg>",
+                "x": -217,
+                "y": -79,
+                "z": 1
+            },
+            {
+                "drawing_id": "8de6e8cd-72eb-4eae-b545-248b8fc0fc37",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"66\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">2.2.2.0/24</text></svg>",
+                "x": 293,
+                "y": -82,
+                "z": 1
+            },
+            {
+                "drawing_id": "83dd9719-9f0e-4c10-a013-049b80444da1",
+                "rotation": 0,
+                "svg": "<svg height=\"200.0\" width=\"640.0\"><ellipse cx=\"320\" cy=\"100\" fill=\"#ffffff\" fill-opacity=\"1.0\" rx=\"320\" ry=\"100\" stroke=\"#000000\" stroke-width=\"2\" /></svg>",
+                "x": -244,
+                "y": -173,
+                "z": -1
+            },
+            {
+                "drawing_id": "d64cadb8-23a5-4339-9418-3cdad816ee34",
+                "rotation": 0,
+                "svg": "<svg height=\"190\" width=\"292\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">R1\n------------------------------------------------------------\nrouter eigrp 100\n network 1.1.1.0 0.0.0.255\n network 192.168.1.0\n no auto-summary\n!\nkey chain EIGRP-AUTH\n key 10\n   key-string eigrp\n!\nip authentication mode eigrp 100 md5\nip authentication key-chain eigrp 100 EIGRP-AUTH</text></svg>",
+                "x": -547,
+                "y": -160,
+                "z": 1
+            },
+            {
+                "drawing_id": "0d1c8653-0101-40e9-8187-5d7ef6364ec1",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"202\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">show ip eigrp interfaces detail f0/0</text></svg>",
+                "x": -317,
+                "y": 196,
+                "z": 1
+            },
+            {
+                "drawing_id": "8156b936-f98e-49a2-b989-12fbc48780b1",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"189\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">show eigrp interfaces detail f0/0</text></svg>",
+                "x": 306,
+                "y": 196,
+                "z": 1
+            },
+            {
+                "drawing_id": "c931b970-694f-4051-ac2e-ca6ce6e3c248",
+                "rotation": 0,
+                "svg": "<svg height=\"120\" width=\"275\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">ASA-1\n--------------------------------------------------------\nrouter eigrp 100\n network 192.168.1.0 255.255.255.0\n network 2.2.2.0 255.255.255.0\n!\nauthentication mode eigrp 100 md5\nauthentication key-chain eigrp 100 EIGRP-AUTH</text></svg>",
+                "x": 272,
+                "y": 16,
+                "z": 1
+            }
+        ],
+        "links": [
+            {
+                "filters": {},
+                "link_id": "1f35610f-43b7-46e0-b033-2deba52048ac",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": 72,
+                            "y": 20
+                        },
+                        "node_id": "d0012d74-30d0-487e-a3ab-102d27b770ee",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 1,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "Gi0/0",
+                            "x": -44,
+                            "y": 34
+                        },
+                        "node_id": "3618b243-e6a7-46c0-960b-bbcf5d2a1cb4",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "vm",
+                "console": 5000,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R1",
+                    "x": 21,
+                    "y": -25
+                },
+                "name": "R1",
+                "node_id": "d0012d74-30d0-487e-a3ab-102d27b770ee",
+                "node_type": "dynamips",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "auto_delete_disks": true,
+                    "aux": null,
+                    "clock_divisor": 8,
+                    "disk0": 0,
+                    "disk1": 0,
+                    "dynamips_id": 1,
+                    "exec_area": 64,
+                    "idlemax": 500,
+                    "idlepc": "0x60a7ff48",
+                    "idlesleep": 30,
+                    "image": "c3725-adventerprisek9-mz.124-25d.image",
+                    "image_md5sum": "606484061b9e52e71d4f4ddab9af19e7",
+                    "iomem": 5,
+                    "mac_addr": "c201.0775.0000",
+                    "mmap": true,
+                    "nvram": 256,
+                    "platform": "c3725",
+                    "ram": 128,
+                    "slot0": "GT96100-FE",
+                    "slot1": "NM-1FE-TX",
+                    "slot2": "NM-1FE-TX",
+                    "sparsemem": true,
+                    "system_id": "FTX0945W0MY",
+                    "wic0": "WIC-2T",
+                    "wic1": "WIC-2T",
+                    "wic2": null
+                },
+                "symbol": ":/symbols/router.svg",
+                "width": 66,
+                "x": -154,
+                "y": -91,
+                "z": 0
+            },
+            {
+                "compute_id": "vm",
+                "console": 5001,
+                "console_type": "telnet",
+                "first_port_name": "Management0/0",
+                "height": 60,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "ASA-1",
+                    "x": 4,
+                    "y": -25
+                },
+                "name": "ASA-1",
+                "node_id": "3618b243-e6a7-46c0-960b-bbcf5d2a1cb4",
+                "node_type": "qemu",
+                "port_name_format": "Gi0/{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "e1000",
+                    "adapters": 8,
+                    "bios_image": "",
+                    "bios_image_md5sum": null,
+                    "boot_priority": "c",
+                    "cdrom_image": "",
+                    "cdrom_image_md5sum": null,
+                    "cpu_throttling": 0,
+                    "cpus": 1,
+                    "hda_disk_image": "asa.qcow2",
+                    "hda_disk_image_md5sum": "aa9462c9c745c674bf102947e0ff0359",
+                    "hda_disk_interface": "virtio",
+                    "hdb_disk_image": "",
+                    "hdb_disk_image_md5sum": null,
+                    "hdb_disk_interface": "ide",
+                    "hdc_disk_image": "",
+                    "hdc_disk_image_md5sum": null,
+                    "hdc_disk_interface": "ide",
+                    "hdd_disk_image": "",
+                    "hdd_disk_image_md5sum": null,
+                    "hdd_disk_interface": "ide",
+                    "initrd": "",
+                    "initrd_md5sum": null,
+                    "kernel_command_line": "",
+                    "kernel_image": "",
+                    "kernel_image_md5sum": null,
+                    "legacy_networking": false,
+                    "linked_clone": true,
+                    "mac_address": "0c:1e:53:1c:b4:00",
+                    "options": "-nographic",
+                    "platform": "x86_64",
+                    "process_priority": "normal",
+                    "qemu_path": "/usr/bin/qemu-system-x86_64",
+                    "ram": 2048,
+                    "usage": "There is no default password and enable password. A default configuration is present. ASAv goes through a double-boot before becoming active. This is normal and expected."
+                },
+                "symbol": ":/symbols/asa.svg",
+                "width": 52,
+                "x": 221,
+                "y": -99,
+                "z": 0
+            }
+        ]
+    },
+    "type": "topology",
+    "variables": null,
+    "version": "2.1.8",
+    "zoom": 100
+}

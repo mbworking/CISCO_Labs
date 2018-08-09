@@ -1,0 +1,178 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "grid_size": 75,
+    "name": "Control Plane Protection (CPPr)",
+    "project_id": "bc838c70-064f-4d63-82ec-816b6f4c40f6",
+    "revision": 8,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "show_grid": false,
+    "show_interface_labels": true,
+    "show_layers": false,
+    "snap_to_grid": false,
+    "supplier": null,
+    "topology": {
+        "computes": [],
+        "drawings": [
+            {
+                "drawing_id": "26eede2d-c6d8-4981-b46d-50d8ccaea9c0",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"94\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">192.168.1.0/24</text></svg>",
+                "x": 188,
+                "y": -133,
+                "z": 1
+            },
+            {
+                "drawing_id": "f01ea166-e5d4-485f-a891-892605da6185",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"66\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">1.1.1.0/24</text></svg>",
+                "x": 503,
+                "y": -94,
+                "z": 1
+            },
+            {
+                "drawing_id": "d3b1ddd4-4bd8-4c41-a5b6-1e9d69ed67be",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"66\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">2.2.2.0/24</text></svg>",
+                "x": -98,
+                "y": -96,
+                "z": 1
+            },
+            {
+                "drawing_id": "5fc8b1c0-08d7-493e-9919-af50a17c7d86",
+                "rotation": 0,
+                "svg": "<svg height=\"200.0\" width=\"684.5070422535202\"><ellipse cx=\"342\" cy=\"100\" fill=\"#ffffff\" fill-opacity=\"1.0\" rx=\"343\" ry=\"100\" stroke=\"#000000\" stroke-width=\"2\" /></svg>",
+                "x": -109,
+                "y": -185,
+                "z": -1
+            },
+            {
+                "drawing_id": "ba5ffcb8-f97f-4226-abb3-ac217f6c48ca",
+                "rotation": 0,
+                "svg": "<svg height=\"22\" width=\"67\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">EIGRP 100</text></svg>",
+                "x": 204,
+                "y": -39,
+                "z": 1
+            },
+            {
+                "drawing_id": "743b049c-a69b-4d13-8239-dcc0d675732f",
+                "rotation": 0,
+                "svg": "<svg height=\"260\" width=\"370\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">R2\n----------------------------------------------------------------------------\nclass-map match-all CPPr-EIGRP\n match access-group name EIGRP\nclass-map match-all CPPr-ARP\n match protocol arp\n!\npolicy-map PMAP-CPPr\n class CPPr-ARP\n  police rate 10 pps conform-action transmit  exceed-action drop\n class CPPr-EIGRP\n  police rate 100 pps conform-action transmit  exceed-action drop\n!\ncontrol-plane cef-exception\n service-policy input PMAP-CPPr\n!\nip access-list extended EIGRP\n permit eigrp any any</text></svg>",
+                "x": -506,
+                "y": -145,
+                "z": 1
+            }
+        ],
+        "links": [
+            {
+                "filters": {},
+                "link_id": "87628709-b6f8-4912-bc75-e63ac98e7431",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/0",
+                            "x": 72,
+                            "y": 21
+                        },
+                        "node_id": "3427fe82-194c-4249-8af7-1166b1fc9ac8",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0/0",
+                            "x": -6,
+                            "y": 22
+                        },
+                        "node_id": "3e02ba2b-64a6-4616-9b75-84f496bd1cfb",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "vm",
+                "console": 5000,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R1",
+                    "x": 21,
+                    "y": -25
+                },
+                "name": "R1",
+                "node_id": "3e02ba2b-64a6-4616-9b75-84f496bd1cfb",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 1,
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "45e99761a95cbd3ee3924ecf0f3d89e5",
+                    "nvram": 64,
+                    "path": "L3-ADVENTERPRISE9-15.5.2T.bin",
+                    "ram": 256,
+                    "serial_adapters": 2,
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/router.svg",
+                "width": 66,
+                "x": 428,
+                "y": -106,
+                "z": 0
+            },
+            {
+                "compute_id": "vm",
+                "console": 5001,
+                "console_type": "telnet",
+                "first_port_name": null,
+                "height": 45,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "R2",
+                    "x": 21,
+                    "y": -25
+                },
+                "name": "R2",
+                "node_id": "3427fe82-194c-4249-8af7-1166b1fc9ac8",
+                "node_type": "iou",
+                "port_name_format": "Ethernet{segment0}/{port0}",
+                "port_segment_size": 4,
+                "properties": {
+                    "application_id": 2,
+                    "ethernet_adapters": 2,
+                    "l1_keepalives": false,
+                    "md5sum": "45e99761a95cbd3ee3924ecf0f3d89e5",
+                    "nvram": 64,
+                    "path": "L3-ADVENTERPRISE9-15.5.2T.bin",
+                    "ram": 256,
+                    "serial_adapters": 2,
+                    "use_default_iou_values": true
+                },
+                "symbol": ":/symbols/router.svg",
+                "width": 66,
+                "x": -24,
+                "y": -106,
+                "z": 0
+            }
+        ]
+    },
+    "type": "topology",
+    "variables": null,
+    "version": "2.1.8",
+    "zoom": 100
+}
